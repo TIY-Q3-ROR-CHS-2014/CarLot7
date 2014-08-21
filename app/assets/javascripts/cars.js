@@ -137,6 +137,17 @@ $(document).ready(function() {
     })
   })
 
+  $(".new_page").click(function() {
+    console.log("hey rob")
+    var new_page = $(this).html()
+    console.log(new_page)
+    $(".car_list").addClass("hidden")
+    $(".group_" + new_page).removeClass("hidden")
+
+  })
+
+
+
 })
 
 
